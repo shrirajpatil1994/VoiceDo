@@ -1,0 +1,858 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07C2170E905BDBD6493427D5 /* Module6Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A940F066588C9D50383FC250 /* Module6Tests.swift */; };
+		11DFD8DE06BB214A70957440 /* SpeechServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6DCDFCA6A4A90E91F3BE06 /* SpeechServiceTests.swift */; };
+		1BDAE1F83B8524A1F53F7563 /* VoiceDoShared in Frameworks */ = {isa = PBXBuildFile; productRef = 64506515B54C8A73AA5F59C4 /* VoiceDoShared */; };
+		1D99DF662A1D4BA0702FB95A /* WidgetReloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA74148B7D8FFEFECC00A55B /* WidgetReloadService.swift */; };
+		2709045447B6EADAE95CBB72 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272CD55712E05B175681561C /* DashboardView.swift */; };
+		3253585069D5FCAE9CD256EF /* ReminderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAD7A5240E27E6465DB8AC4 /* ReminderListView.swift */; };
+		341782510F6A4D988DFF5A0F /* VoiceCaptureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B940EE14AA3CBBB922A2A7 /* VoiceCaptureViewModel.swift */; };
+		39A519B9FD72F4351D36236A /* AssociatedTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179BBE3C6FF4B24F67C31E04 /* AssociatedTask.swift */; };
+		3D2AFB098A10F635E3BCFCCD /* ContentRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560B511BCB45EF459E3CD03A /* ContentRootView.swift */; };
+		48070B69B9D5F2DE0D0BFA35 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E5B53132CC14506AE32386 /* ViewExtensions.swift */; };
+		4F1F3454E60D6B07715D1AB5 /* VoiceDoShared in Frameworks */ = {isa = PBXBuildFile; productRef = C15B43301DC6261D74C31016 /* VoiceDoShared */; };
+		55677FA0EE778E0D4964D822 /* VoiceCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A827CD5942062DC67D4D7D2 /* VoiceCaptureView.swift */; };
+		60F9AC68E7596C2A0D0B3E6C /* ReminderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46E6FD6394101DB7E99BDED /* ReminderItem.swift */; };
+		64AF31257A3A97A3160CA9CD /* VoiceDoIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D44BCE5E4245F1EB3299C1B /* VoiceDoIntent.swift */; };
+		798C01E2B51FCDEF5826F865 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD9073E64B92BABC3291BC86 /* Assets.xcassets */; };
+		7BA6C37663A3143D0B38E71D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48304B6B22BD528B9C4B0B1 /* SettingsView.swift */; };
+		886392A6D037641F6F508C53 /* MinimalCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1925A07625FED9F8F397B3 /* MinimalCaptureView.swift */; };
+		8B9B4C4C2C6D2126E81B3C5E /* DeepLinkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F4FE7A5AE9B055FB7D7F6D /* DeepLinkHandler.swift */; };
+		95A2E571DB55FA23789A7F58 /* TodoItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67D609D28E3BBDDDE95D6A0 /* TodoItemDetailView.swift */; };
+		98FBBB3E55F5D7FA0D7AA7D1 /* IntentParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B61E5D4E93925F487911B2 /* IntentParserTests.swift */; };
+		9F07E44248E9645F673ADAAB /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA79DD81FA2C3DA6F802BB2F /* TodoListView.swift */; };
+		A1E36AA68DE8DD5340729487 /* VoiceDoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BAED9EE361033321DDBB00 /* VoiceDoWidget.swift */; };
+		A2BDF2B35F6B381A127617E5 /* ClaudeAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4674414B1A24310A8D16079A /* ClaudeAPIService.swift */; };
+		A851C46AFF22B2101AA87E86 /* MessageDraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9796DA81F515587B6C98E8 /* MessageDraft.swift */; };
+		B80D5EB9C50B9417F837E4A4 /* VDTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF00A394097E398F91192104 /* VDTheme.swift */; };
+		B8BF5B65418F8F3DAAB01607 /* VoiceDoShared in Frameworks */ = {isa = PBXBuildFile; productRef = 314E474B19D114DFEE21B39C /* VoiceDoShared */; };
+		BA5197E01D6F7AF660B96488 /* APIKeyManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE735B9D49CBABC50D96E312 /* APIKeyManagerTests.swift */; };
+		BD7998F573127EC0D52EDFD0 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FE244E332AB6EEE9FF99EC /* OnboardingView.swift */; };
+		C26C795B3165ADACD5DAABCB /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C59748EC201BCFC4D24AF5 /* SpeechService.swift */; };
+		C37F875FDF7DFF6C274F251A /* VoiceDoWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DA03ECA6715359AC9685465B /* VoiceDoWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C535C1ADCCE48E2F2FEED8E4 /* VoiceDoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C07D87062D8A54BF3240D9 /* VoiceDoApp.swift */; };
+		CDA99E45ED78AB4A4CA74707 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B08E60FDDDBB009DA5499E7 /* TodoItem.swift */; };
+		D689C9574E8940B56DCF4C01 /* IntentParserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F22824953B6E57879651BC /* IntentParserService.swift */; };
+		D7B1417A594F56D37FB71A06 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320AE5B9306256724220100B /* NotificationService.swift */; };
+		D9CF56AEE1DDEE2F49052310 /* Module4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58B4DB6413D57AAD31A1273 /* Module4Tests.swift */; };
+		DADCF9A70B467CA494ADA0AE /* SmallWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BC4D31AEDF4F14E0F360FA /* SmallWidgetView.swift */; };
+		DC079D5F0E71497E5076657B /* ReminderCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608E89104E543BA1AC8256BA /* ReminderCardView.swift */; };
+		DD18A622EA80F7CDD4BFDC53 /* ClaudeAPIServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8311F92937B433DAC0ECD3 /* ClaudeAPIServiceTests.swift */; };
+		E6F91E7BF3E0DA12B19D8A4D /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC3BA4839B82ED92C326CE8 /* PersistenceService.swift */; };
+		EBC2F6C9A968173F56F13A4F /* APIKeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07AE0EE35DDDED364248C3D /* APIKeyManager.swift */; };
+		EC90090CA1A161EA77EF22BA /* VoiceDoWidgetConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F9624E1904DA0CF9F2EEC4 /* VoiceDoWidgetConfiguration.swift */; };
+		F0210EB6DAFA5DEA73D87463 /* VoiceCaptureResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37173829B864E99A73892CD /* VoiceCaptureResultView.swift */; };
+		FB3CBCF6DDEB9C489A9C5BEE /* MediumWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E8A086F7D35053224B2EAB /* MediumWidgetView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2938A35212A0C4B644014ED0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A54AD37A628D88F90CAFB6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6CACBCAE9D2AC7267DEFBF5;
+			remoteInfo = VoiceDo;
+		};
+		673FFE5216E564533E19FE40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A54AD37A628D88F90CAFB6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A90AC618F832E36E0425FCCA;
+			remoteInfo = VoiceDoWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ACB7E8F939E0CC7C12AC6DBE /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C37F875FDF7DFF6C274F251A /* VoiceDoWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08BAED9EE361033321DDBB00 /* VoiceDoWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceDoWidget.swift; sourceTree = "<group>"; };
+		0D9796DA81F515587B6C98E8 /* MessageDraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDraft.swift; sourceTree = "<group>"; };
+		179BBE3C6FF4B24F67C31E04 /* AssociatedTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociatedTask.swift; sourceTree = "<group>"; };
+		17C07D87062D8A54BF3240D9 /* VoiceDoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceDoApp.swift; sourceTree = "<group>"; };
+		18B242D9C6355A21F26AA462 /* VoiceDoShared */ = {isa = PBXFileReference; lastKnownFileType = folder; name = VoiceDoShared; path = Packages/VoiceDoShared; sourceTree = SOURCE_ROOT; };
+		26DEF1DDACA97C6F959E9489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		272CD55712E05B175681561C /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		2E8311F92937B433DAC0ECD3 /* ClaudeAPIServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaudeAPIServiceTests.swift; sourceTree = "<group>"; };
+		320AE5B9306256724220100B /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		38E8A086F7D35053224B2EAB /* MediumWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumWidgetView.swift; sourceTree = "<group>"; };
+		3D44BCE5E4245F1EB3299C1B /* VoiceDoIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceDoIntent.swift; sourceTree = "<group>"; };
+		4674414B1A24310A8D16079A /* ClaudeAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaudeAPIService.swift; sourceTree = "<group>"; };
+		54BC4D31AEDF4F14E0F360FA /* SmallWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallWidgetView.swift; sourceTree = "<group>"; };
+		55F9624E1904DA0CF9F2EEC4 /* VoiceDoWidgetConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceDoWidgetConfiguration.swift; sourceTree = "<group>"; };
+		560B511BCB45EF459E3CD03A /* ContentRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRootView.swift; sourceTree = "<group>"; };
+		5C50ABB5C7DA05434402F6CB /* VoiceDo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VoiceDo.entitlements; sourceTree = "<group>"; };
+		5F1925A07625FED9F8F397B3 /* MinimalCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimalCaptureView.swift; sourceTree = "<group>"; };
+		5F6DCDFCA6A4A90E91F3BE06 /* SpeechServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechServiceTests.swift; sourceTree = "<group>"; };
+		608E89104E543BA1AC8256BA /* ReminderCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCardView.swift; sourceTree = "<group>"; };
+		63C59748EC201BCFC4D24AF5 /* SpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
+		73B940EE14AA3CBBB922A2A7 /* VoiceCaptureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceCaptureViewModel.swift; sourceTree = "<group>"; };
+		7A827CD5942062DC67D4D7D2 /* VoiceCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceCaptureView.swift; sourceTree = "<group>"; };
+		7E537356AC4BF40CCCFBCB19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		81FE244E332AB6EEE9FF99EC /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		8B08E60FDDDBB009DA5499E7 /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
+		90E5B53132CC14506AE32386 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		A940F066588C9D50383FC250 /* Module6Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module6Tests.swift; sourceTree = "<group>"; };
+		AF00A394097E398F91192104 /* VDTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VDTheme.swift; sourceTree = "<group>"; };
+		B07AE0EE35DDDED364248C3D /* APIKeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeyManager.swift; sourceTree = "<group>"; };
+		C37173829B864E99A73892CD /* VoiceCaptureResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceCaptureResultView.swift; sourceTree = "<group>"; };
+		CA79DD81FA2C3DA6F802BB2F /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
+		D48304B6B22BD528B9C4B0B1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D5496F6AC6EC87B6361F950A /* VoiceDoWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VoiceDoWidget.entitlements; sourceTree = "<group>"; };
+		D67D609D28E3BBDDDE95D6A0 /* TodoItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItemDetailView.swift; sourceTree = "<group>"; };
+		DA03ECA6715359AC9685465B /* VoiceDoWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = VoiceDoWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB3DC76F887207FA473896D2 /* VoiceDoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceDoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB6E6CA52CEEB5CE313AB9F8 /* VoiceDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBAD7A5240E27E6465DB8AC4 /* ReminderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListView.swift; sourceTree = "<group>"; };
+		E46E6FD6394101DB7E99BDED /* ReminderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderItem.swift; sourceTree = "<group>"; };
+		E58B4DB6413D57AAD31A1273 /* Module4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module4Tests.swift; sourceTree = "<group>"; };
+		EA74148B7D8FFEFECC00A55B /* WidgetReloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetReloadService.swift; sourceTree = "<group>"; };
+		ECC3BA4839B82ED92C326CE8 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		EE735B9D49CBABC50D96E312 /* APIKeyManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeyManagerTests.swift; sourceTree = "<group>"; };
+		F1B61E5D4E93925F487911B2 /* IntentParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentParserTests.swift; sourceTree = "<group>"; };
+		F4F22824953B6E57879651BC /* IntentParserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentParserService.swift; sourceTree = "<group>"; };
+		F5F4FE7A5AE9B055FB7D7F6D /* DeepLinkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkHandler.swift; sourceTree = "<group>"; };
+		FD9073E64B92BABC3291BC86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		748FBEAC5B85786188E72B0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F1F3454E60D6B07715D1AB5 /* VoiceDoShared in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D229D307ADDB97DAE0F340BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BDAE1F83B8524A1F53F7563 /* VoiceDoShared in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D725984696881C643F53DC79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8BF5B65418F8F3DAAB01607 /* VoiceDoShared in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06F5D142FA23F56D75CA3B59 /* VoiceDoTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE735B9D49CBABC50D96E312 /* APIKeyManagerTests.swift */,
+				2E8311F92937B433DAC0ECD3 /* ClaudeAPIServiceTests.swift */,
+				F1B61E5D4E93925F487911B2 /* IntentParserTests.swift */,
+				E58B4DB6413D57AAD31A1273 /* Module4Tests.swift */,
+				A940F066588C9D50383FC250 /* Module6Tests.swift */,
+				5F6DCDFCA6A4A90E91F3BE06 /* SpeechServiceTests.swift */,
+			);
+			path = VoiceDoTests;
+			sourceTree = "<group>";
+		};
+		183BA850D46C8379148877AC /* VoiceDoWidget */ = {
+			isa = PBXGroup;
+			children = (
+				26DEF1DDACA97C6F959E9489 /* Info.plist */,
+				3D44BCE5E4245F1EB3299C1B /* VoiceDoIntent.swift */,
+				D5496F6AC6EC87B6361F950A /* VoiceDoWidget.entitlements */,
+				08BAED9EE361033321DDBB00 /* VoiceDoWidget.swift */,
+				55F9624E1904DA0CF9F2EEC4 /* VoiceDoWidgetConfiguration.swift */,
+				5B94CB3083F1CEFF62629754 /* WidgetViews */,
+			);
+			path = VoiceDoWidget;
+			sourceTree = "<group>";
+		};
+		2B955817E1F1C64ED390575C /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				560B511BCB45EF459E3CD03A /* ContentRootView.swift */,
+				272CD55712E05B175681561C /* DashboardView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		4A940F4A993DD4536555DE92 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D48304B6B22BD528B9C4B0B1 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		50E56F3DABB2C523C96F2B30 /* VoiceCapture */ = {
+			isa = PBXGroup;
+			children = (
+				C37173829B864E99A73892CD /* VoiceCaptureResultView.swift */,
+				7A827CD5942062DC67D4D7D2 /* VoiceCaptureView.swift */,
+				73B940EE14AA3CBBB922A2A7 /* VoiceCaptureViewModel.swift */,
+			);
+			path = VoiceCapture;
+			sourceTree = "<group>";
+		};
+		5693753F4AC9C3DE975E674A /* ReminderList */ = {
+			isa = PBXGroup;
+			children = (
+				DBAD7A5240E27E6465DB8AC4 /* ReminderListView.swift */,
+			);
+			path = ReminderList;
+			sourceTree = "<group>";
+		};
+		5B94CB3083F1CEFF62629754 /* WidgetViews */ = {
+			isa = PBXGroup;
+			children = (
+				38E8A086F7D35053224B2EAB /* MediumWidgetView.swift */,
+				54BC4D31AEDF4F14E0F360FA /* SmallWidgetView.swift */,
+			);
+			path = WidgetViews;
+			sourceTree = "<group>";
+		};
+		60896051F91D512EE258E4B1 /* VoiceDo */ = {
+			isa = PBXGroup;
+			children = (
+				FD9073E64B92BABC3291BC86 /* Assets.xcassets */,
+				7E537356AC4BF40CCCFBCB19 /* Info.plist */,
+				5C50ABB5C7DA05434402F6CB /* VoiceDo.entitlements */,
+				93723D6E9A298A0E6240F944 /* App */,
+				E277ED6248C52C6088E575FB /* Features */,
+				7C21DE7C557B84439444C1B4 /* Models */,
+				B6E99B9ADA28CA4460333ECB /* Services */,
+				81ED9D160FDB9A395D410798 /* Shared */,
+			);
+			path = VoiceDo;
+			sourceTree = "<group>";
+		};
+		63137A351F833474A7C40237 = {
+			isa = PBXGroup;
+			children = (
+				D5720072F0A1A36F9E725D22 /* Packages */,
+				60896051F91D512EE258E4B1 /* VoiceDo */,
+				06F5D142FA23F56D75CA3B59 /* VoiceDoTests */,
+				183BA850D46C8379148877AC /* VoiceDoWidget */,
+				ED8A010DD62ADEF032F591A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63E67789A9C0E5F87C4AB35A /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				81FE244E332AB6EEE9FF99EC /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		7C21DE7C557B84439444C1B4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				179BBE3C6FF4B24F67C31E04 /* AssociatedTask.swift */,
+				0D9796DA81F515587B6C98E8 /* MessageDraft.swift */,
+				E46E6FD6394101DB7E99BDED /* ReminderItem.swift */,
+				8B08E60FDDDBB009DA5499E7 /* TodoItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		81ED9D160FDB9A395D410798 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F5F4FE7A5AE9B055FB7D7F6D /* DeepLinkHandler.swift */,
+				AF00A394097E398F91192104 /* VDTheme.swift */,
+				90E5B53132CC14506AE32386 /* ViewExtensions.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		93723D6E9A298A0E6240F944 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				17C07D87062D8A54BF3240D9 /* VoiceDoApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A48B83F3A057112CF7115902 /* MinimalCapture */ = {
+			isa = PBXGroup;
+			children = (
+				5F1925A07625FED9F8F397B3 /* MinimalCaptureView.swift */,
+			);
+			path = MinimalCapture;
+			sourceTree = "<group>";
+		};
+		B6E99B9ADA28CA4460333ECB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B07AE0EE35DDDED364248C3D /* APIKeyManager.swift */,
+				4674414B1A24310A8D16079A /* ClaudeAPIService.swift */,
+				F4F22824953B6E57879651BC /* IntentParserService.swift */,
+				320AE5B9306256724220100B /* NotificationService.swift */,
+				ECC3BA4839B82ED92C326CE8 /* PersistenceService.swift */,
+				63C59748EC201BCFC4D24AF5 /* SpeechService.swift */,
+				EA74148B7D8FFEFECC00A55B /* WidgetReloadService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D5720072F0A1A36F9E725D22 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				18B242D9C6355A21F26AA462 /* VoiceDoShared */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		E277ED6248C52C6088E575FB /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				2B955817E1F1C64ED390575C /* Dashboard */,
+				A48B83F3A057112CF7115902 /* MinimalCapture */,
+				63E67789A9C0E5F87C4AB35A /* Onboarding */,
+				FAA5688DFB90D9F71EB27DB9 /* ReminderCard */,
+				5693753F4AC9C3DE975E674A /* ReminderList */,
+				4A940F4A993DD4536555DE92 /* Settings */,
+				E78E89021D32F1A5D84676DB /* TodoList */,
+				50E56F3DABB2C523C96F2B30 /* VoiceCapture */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		E78E89021D32F1A5D84676DB /* TodoList */ = {
+			isa = PBXGroup;
+			children = (
+				D67D609D28E3BBDDDE95D6A0 /* TodoItemDetailView.swift */,
+				CA79DD81FA2C3DA6F802BB2F /* TodoListView.swift */,
+			);
+			path = TodoList;
+			sourceTree = "<group>";
+		};
+		ED8A010DD62ADEF032F591A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB6E6CA52CEEB5CE313AB9F8 /* VoiceDo.app */,
+				DB3DC76F887207FA473896D2 /* VoiceDoTests.xctest */,
+				DA03ECA6715359AC9685465B /* VoiceDoWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAA5688DFB90D9F71EB27DB9 /* ReminderCard */ = {
+			isa = PBXGroup;
+			children = (
+				608E89104E543BA1AC8256BA /* ReminderCardView.swift */,
+			);
+			path = ReminderCard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A90AC618F832E36E0425FCCA /* VoiceDoWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40344C36E5AB2C1C1F6C160B /* Build configuration list for PBXNativeTarget "VoiceDoWidget" */;
+			buildPhases = (
+				7407D1C604638B80AD7D517F /* Sources */,
+				748FBEAC5B85786188E72B0F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoiceDoWidget;
+			packageProductDependencies = (
+				C15B43301DC6261D74C31016 /* VoiceDoShared */,
+			);
+			productName = VoiceDoWidget;
+			productReference = DA03ECA6715359AC9685465B /* VoiceDoWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		CEA1D937E3D564C4EA1E7568 /* VoiceDoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39F5377513268692F5BA7120 /* Build configuration list for PBXNativeTarget "VoiceDoTests" */;
+			buildPhases = (
+				377932ECB2D859C48A7B99ED /* Sources */,
+				D229D307ADDB97DAE0F340BE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5F738EBA87BCF1A741EE9EE /* PBXTargetDependency */,
+			);
+			name = VoiceDoTests;
+			packageProductDependencies = (
+				64506515B54C8A73AA5F59C4 /* VoiceDoShared */,
+			);
+			productName = VoiceDoTests;
+			productReference = DB3DC76F887207FA473896D2 /* VoiceDoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D6CACBCAE9D2AC7267DEFBF5 /* VoiceDo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20C47ABE4604140A16024B6A /* Build configuration list for PBXNativeTarget "VoiceDo" */;
+			buildPhases = (
+				30CA89353CCC4897AC687F4B /* Sources */,
+				2E75AEC28869F00613567FF9 /* Resources */,
+				D725984696881C643F53DC79 /* Frameworks */,
+				ACB7E8F939E0CC7C12AC6DBE /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5228B3772A8EC6D75319B31 /* PBXTargetDependency */,
+			);
+			name = VoiceDo;
+			packageProductDependencies = (
+				314E474B19D114DFEE21B39C /* VoiceDoShared */,
+			);
+			productName = VoiceDo;
+			productReference = DB6E6CA52CEEB5CE313AB9F8 /* VoiceDo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A54AD37A628D88F90CAFB6F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 821334B2B90A9E5FDCD5EA62 /* Build configuration list for PBXProject "VoiceDo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 63137A351F833474A7C40237;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				ABD64899F18996CAF7166577 /* XCLocalSwiftPackageReference "Packages/VoiceDoShared" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = ED8A010DD62ADEF032F591A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6CACBCAE9D2AC7267DEFBF5 /* VoiceDo */,
+				CEA1D937E3D564C4EA1E7568 /* VoiceDoTests */,
+				A90AC618F832E36E0425FCCA /* VoiceDoWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E75AEC28869F00613567FF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				798C01E2B51FCDEF5826F865 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30CA89353CCC4897AC687F4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBC2F6C9A968173F56F13A4F /* APIKeyManager.swift in Sources */,
+				39A519B9FD72F4351D36236A /* AssociatedTask.swift in Sources */,
+				A2BDF2B35F6B381A127617E5 /* ClaudeAPIService.swift in Sources */,
+				3D2AFB098A10F635E3BCFCCD /* ContentRootView.swift in Sources */,
+				2709045447B6EADAE95CBB72 /* DashboardView.swift in Sources */,
+				8B9B4C4C2C6D2126E81B3C5E /* DeepLinkHandler.swift in Sources */,
+				D689C9574E8940B56DCF4C01 /* IntentParserService.swift in Sources */,
+				A851C46AFF22B2101AA87E86 /* MessageDraft.swift in Sources */,
+				886392A6D037641F6F508C53 /* MinimalCaptureView.swift in Sources */,
+				D7B1417A594F56D37FB71A06 /* NotificationService.swift in Sources */,
+				BD7998F573127EC0D52EDFD0 /* OnboardingView.swift in Sources */,
+				E6F91E7BF3E0DA12B19D8A4D /* PersistenceService.swift in Sources */,
+				DC079D5F0E71497E5076657B /* ReminderCardView.swift in Sources */,
+				60F9AC68E7596C2A0D0B3E6C /* ReminderItem.swift in Sources */,
+				3253585069D5FCAE9CD256EF /* ReminderListView.swift in Sources */,
+				7BA6C37663A3143D0B38E71D /* SettingsView.swift in Sources */,
+				C26C795B3165ADACD5DAABCB /* SpeechService.swift in Sources */,
+				CDA99E45ED78AB4A4CA74707 /* TodoItem.swift in Sources */,
+				95A2E571DB55FA23789A7F58 /* TodoItemDetailView.swift in Sources */,
+				9F07E44248E9645F673ADAAB /* TodoListView.swift in Sources */,
+				B80D5EB9C50B9417F837E4A4 /* VDTheme.swift in Sources */,
+				48070B69B9D5F2DE0D0BFA35 /* ViewExtensions.swift in Sources */,
+				F0210EB6DAFA5DEA73D87463 /* VoiceCaptureResultView.swift in Sources */,
+				55677FA0EE778E0D4964D822 /* VoiceCaptureView.swift in Sources */,
+				341782510F6A4D988DFF5A0F /* VoiceCaptureViewModel.swift in Sources */,
+				C535C1ADCCE48E2F2FEED8E4 /* VoiceDoApp.swift in Sources */,
+				1D99DF662A1D4BA0702FB95A /* WidgetReloadService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		377932ECB2D859C48A7B99ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA5197E01D6F7AF660B96488 /* APIKeyManagerTests.swift in Sources */,
+				DD18A622EA80F7CDD4BFDC53 /* ClaudeAPIServiceTests.swift in Sources */,
+				98FBBB3E55F5D7FA0D7AA7D1 /* IntentParserTests.swift in Sources */,
+				D9CF56AEE1DDEE2F49052310 /* Module4Tests.swift in Sources */,
+				07C2170E905BDBD6493427D5 /* Module6Tests.swift in Sources */,
+				11DFD8DE06BB214A70957440 /* SpeechServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7407D1C604638B80AD7D517F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB3CBCF6DDEB9C489A9C5BEE /* MediumWidgetView.swift in Sources */,
+				DADCF9A70B467CA494ADA0AE /* SmallWidgetView.swift in Sources */,
+				64AF31257A3A97A3160CA9CD /* VoiceDoIntent.swift in Sources */,
+				A1E36AA68DE8DD5340729487 /* VoiceDoWidget.swift in Sources */,
+				EC90090CA1A161EA77EF22BA /* VoiceDoWidgetConfiguration.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5F738EBA87BCF1A741EE9EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6CACBCAE9D2AC7267DEFBF5 /* VoiceDo */;
+			targetProxy = 2938A35212A0C4B644014ED0 /* PBXContainerItemProxy */;
+		};
+		F5228B3772A8EC6D75319B31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A90AC618F832E36E0425FCCA /* VoiceDoWidget */;
+			targetProxy = 673FFE5216E564533E19FE40 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10C2ED436D24D5141BFF95DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = VoiceDoWidget/VoiceDoWidget.entitlements;
+				INFOPLIST_FILE = VoiceDoWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shrirajpatil.voicedo.widget;
+				SDKROOT = iphoneos;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		176EDC38DF9E32A2A72781BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VoiceDo/VoiceDo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4VGDBVYU6X;
+				INFOPLIST_FILE = VoiceDo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shrirajpatil.voicedo;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		29606338D8607E99129B0886 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VoiceDo/VoiceDo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = VoiceDo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shrirajpatil.voicedo;
+				SDKROOT = iphoneos;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4337F20BDE215D44F7A1F99A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4VGDBVYU6X;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shrirajpatil.voicedo.tests;
+				SDKROOT = iphoneos;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoiceDo.app/VoiceDo";
+			};
+			name = Debug;
+		};
+		D5F91BC4F861E0DBA828F62C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 5.10;
+			};
+			name = Debug;
+		};
+		D8D4A276F48B5BE1AF58F470 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shrirajpatil.voicedo.tests;
+				SDKROOT = iphoneos;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoiceDo.app/VoiceDo";
+			};
+			name = Release;
+		};
+		FD54F0A76760BA0F0A4B4E4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = VoiceDoWidget/VoiceDoWidget.entitlements;
+				DEVELOPMENT_TEAM = 4VGDBVYU6X;
+				INFOPLIST_FILE = VoiceDoWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shrirajpatil.voicedo.widget;
+				SDKROOT = iphoneos;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FDD7346F53472C683A017D57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 5.10;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20C47ABE4604140A16024B6A /* Build configuration list for PBXNativeTarget "VoiceDo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				176EDC38DF9E32A2A72781BB /* Debug */,
+				29606338D8607E99129B0886 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		39F5377513268692F5BA7120 /* Build configuration list for PBXNativeTarget "VoiceDoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4337F20BDE215D44F7A1F99A /* Debug */,
+				D8D4A276F48B5BE1AF58F470 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		40344C36E5AB2C1C1F6C160B /* Build configuration list for PBXNativeTarget "VoiceDoWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD54F0A76760BA0F0A4B4E4E /* Debug */,
+				10C2ED436D24D5141BFF95DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		821334B2B90A9E5FDCD5EA62 /* Build configuration list for PBXProject "VoiceDo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5F91BC4F861E0DBA828F62C /* Debug */,
+				FDD7346F53472C683A017D57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		ABD64899F18996CAF7166577 /* XCLocalSwiftPackageReference "Packages/VoiceDoShared" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/VoiceDoShared;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		314E474B19D114DFEE21B39C /* VoiceDoShared */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VoiceDoShared;
+		};
+		64506515B54C8A73AA5F59C4 /* VoiceDoShared */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VoiceDoShared;
+		};
+		C15B43301DC6261D74C31016 /* VoiceDoShared */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VoiceDoShared;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8A54AD37A628D88F90CAFB6F /* Project object */;
+}

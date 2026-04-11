@@ -1,0 +1,91 @@
+disabled_rules:
+  - trailing_whitespace  # handled by Xcode formatter
+
+opt_in_rules:
+  - force_unwrapping
+  - force_try
+  - implicitly_unwrapped_optional
+  - empty_count
+  - empty_string
+  - explicit_init
+  - fatal_error_message
+  - first_where
+  - joined_default_parameter
+  - literal_expression_end_indentation
+  - multiline_arguments
+  - operator_usage_whitespace
+  - overridden_super_call
+  - prefer_self_type_over_type_of_self
+  - redundant_nil_coalescing
+  - sorted_imports
+  - toggle_bool
+  - unneeded_parentheses_in_closure_argument
+  - vertical_whitespace_closing_braces
+
+analyzer_rules:
+  - unused_import
+
+included:
+  - VoiceDo
+  - VoiceDoWidget
+  - VoiceDoTests
+  - Packages/VoiceDoShared/Sources
+
+excluded:
+  - Packages/VoiceDoShared/.build
+  - .build
+  - DerivedData
+
+line_length:
+  warning: 120
+  error: 150
+  ignores_comments: true
+  ignores_urls: true
+
+type_body_length:
+  warning: 300
+  error: 400
+
+file_length:
+  warning: 400
+  error: 600
+  ignore_comment_only_lines: true
+
+function_body_length:
+  warning: 60
+  error: 100
+
+cyclomatic_complexity:
+  warning: 10
+  error: 20
+
+identifier_name:
+  min_length:
+    warning: 2
+  excluded:
+    - id
+    - db
+    - ok
+
+# Enforce no force unwrap in production code
+force_unwrapping: warning
+force_try: warning
+implicitly_unwrapped_optional:
+  mode: all_except_iboutlets
+
+custom_rules:
+  no_direct_print:
+    name: "No print() statements"
+    regex: '\bprint\s*\('
+    message: "Use os.Logger instead of print(). Logger(subsystem:category:)"
+    severity: warning
+  no_magic_strings_appgroup:
+    name: "No hardcoded App Group IDs"
+    regex: '"group\.'
+    message: "Use AppConstants.appGroupID instead of hardcoded App Group string."
+    severity: warning
+  no_magic_url_scheme:
+    name: "No hardcoded URL schemes"
+    regex: '"voicedo://'
+    message: "Use AppConstants.urlScheme instead of hardcoded URL scheme."
+    severity: warning
